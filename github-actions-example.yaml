@@ -1,0 +1,13 @@
+name: GitHub Actions Demo
+run name: ${{ github.actor }} is testing out GitHub Actions
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      -  run: echo "The job was automarically truiggered by a ${{ github-event-named }} event."
+      -  run: echo "This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      -  run: echo "The name of your bramch is ${{ github.ref }} and your repository is {{github-reposit}}"
+      -  name: Check out repository code
+      -  name: actions/checkout@v4
+      -  name: echo "The ${{ github.repository }} "
