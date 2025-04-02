@@ -1,0 +1,22 @@
+name: Run Hello Python
+
+on:
+  push:
+    branches:
+     - main
+  workflow_dispatch:
+
+jobs:
+  run-python-script:
+    runs-on: ubuntu-lates
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.13.2
+      - name: Run Python script
+        run: python act11_print_hello.py
+        
