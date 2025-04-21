@@ -1,0 +1,11 @@
+# Ignorar carpetas de dependencias
+node_modules/
+venv/
+
+# Ignorar archivos temporales
+*.log
+*.tmp
+
+# Ignorar configuraciones del sistema
+.DS_Store
+Thumbs.db
